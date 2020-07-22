@@ -1,0 +1,13 @@
+
+pluginManagement {
+  repositories {
+    mavenLocal()
+    gradlePluginPortal()
+    maven { url 'https://dl.bintray.com/brambolt/public' }
+  }
+  plugins {
+    id 'com.brambolt.gradle.build' version bramboltBuildVersion
+  }
+}
+
+rootProject.name = 'rt-jetty'

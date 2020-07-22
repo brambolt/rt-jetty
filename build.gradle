@@ -1,0 +1,39 @@
+
+plugins {
+  id 'com.brambolt.gradle.build' apply false
+}
+
+description = 'A minimal Jetty server wrapper for embedding.'
+group = 'com.brambolt.jetty'
+
+ext {
+  artifactId = 'brambolt-rt-jetty'
+  developers = [[
+    email: 'stefan.sigurdsson@brambolt.com',
+    id: 'stefan.sigurdsson@brambolt.com',
+    name: 'Stefán Sigurðsson'
+  ]]
+  inceptionYear = '2017'
+  isOpenSource = false // Disables publishing to plugins.gradle.org and Bintray
+  licenses = [[]]
+  projectVersion = bramboltProjectVersion
+  vcsUrl = 'https://github.com/brambolt/libraries/rt-jetty'
+}
+
+apply plugin: 'com.brambolt.gradle.build'
+
+dependencies {
+  implementation 'com.brambolt:brambolt-rt-util:SNAPSHOT'
+  implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.1'
+
+	 implementation "org.eclipse.jetty:jetty-client:${jettyVersion}"
+  implementation "org.eclipse.jetty:jetty-server:${jettyVersion}"
+  implementation "org.eclipse.jetty:jetty-servlet:${jettyVersion}"
+  testImplementation 'org.junit.jupiter:junit-jupiter-api:latest.release'
+  testImplementation 'org.junit.jupiter:junit-jupiter-engine:latest.release'
+  testImplementation 'org.junit.jupiter:junit-jupiter-params:latest.release'
+  testImplementation 'org.junit.vintage:junit-vintage-engine:latest.release'
+  testImplementation 'org.slf4j:slf4j-api:latest.release'
+  testImplementation 'org.spockframework:spock-core:1.3-groovy-2.5'
+  testRuntime 'org.slf4j:slf4j-simple:latest.release'
+}
