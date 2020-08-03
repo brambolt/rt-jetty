@@ -8,10 +8,10 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 
-import com.brambolt.embedded.util.Context;
+import com.brambolt.util.Context;
 
-import static com.brambolt.embedded.util.Require.notEmpty;
-import static com.brambolt.embedded.util.Require.notNull;
+import static com.brambolt.util.Require.notEmpty;
+import static com.brambolt.util.Require.notNull;
 
 public class EmbeddedServer {
 

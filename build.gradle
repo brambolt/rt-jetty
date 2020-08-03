@@ -1,6 +1,6 @@
 
 plugins {
-  id 'com.brambolt.gradle.build' apply false
+  id 'com.brambolt.gradle.build.library' apply false
 }
 
 description = 'A minimal Jetty server wrapper for embedding.'
@@ -16,14 +16,14 @@ ext {
   inceptionYear = '2017'
   isOpenSource = false // Disables publishing to plugins.gradle.org and Bintray
   licenses = [[]]
-  projectVersion = bramboltProjectVersion
+  release = bramboltRelease
   vcsUrl = 'https://github.com/brambolt/libraries/rt-jetty'
 }
 
-apply plugin: 'com.brambolt.gradle.build'
+apply plugin: 'com.brambolt.gradle.build.library'
 
 dependencies {
-  implementation 'com.brambolt:brambolt-rt-util:SNAPSHOT'
+  implementation "com.brambolt:brambolt-rt-util:${version}"
   implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.1'
 
 	 implementation "org.eclipse.jetty:jetty-client:${jettyVersion}"

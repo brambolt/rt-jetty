@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.brambolt.embedded.jetty.EmbeddedServer.Mapping;
-import com.brambolt.embedded.util.Context;
+import com.brambolt.util.Context;
 
 /**
  * Starts a Jetty server.

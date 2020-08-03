@@ -1,7 +1,7 @@
 package com.brambolt.embedded.jetty;
 
 import com.brambolt.embedded.json.Json;
-import com.brambolt.embedded.util.Resources;
+import com.brambolt.util.Resources;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import javax.servlet.ServletOutputStream;

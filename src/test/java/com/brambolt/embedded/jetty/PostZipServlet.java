@@ -8,7 +8,7 @@ import javax.servlet.http.Part;
 import java.util.Collection;
 
 import static com.brambolt.embedded.jetty.Responses.internalError;
-import static com.brambolt.embedded.util.zip.ZipFiles.scan;
+import static com.brambolt.util.zip.ZipFiles.scan;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class PostZipServlet extends HttpServlet {

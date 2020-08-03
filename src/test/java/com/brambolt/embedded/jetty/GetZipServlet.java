@@ -4,7 +4,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import static com.brambolt.embedded.util.zip.ZipFiles.bytes;
+import static com.brambolt.util.zip.ZipFiles.bytes;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class GetZipServlet extends HttpServlet {

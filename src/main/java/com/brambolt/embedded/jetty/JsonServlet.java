@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.brambolt.embedded.util.Context;
+import com.brambolt.util.Context;
 
 import com.fasterxml.jackson.databind.JsonNode;
 

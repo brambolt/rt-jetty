@@ -1,6 +1,6 @@
 package com.brambolt.embedded.jetty;
 
-import com.brambolt.embedded.util.Context;
+import com.brambolt.util.Context;
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.junit.jupiter.api.AfterAll;
@@ -21,7 +21,7 @@ import static com.brambolt.embedded.jetty.ContentTypes.TEXT_HTML;
 import static com.brambolt.embedded.jetty.GetZipMultipleEntriesServlet.PATHS;
 import static com.brambolt.embedded.jetty.GetZipMultipleEntriesServlet.CONTENT;
 import static com.brambolt.embedded.jetty.GetZipServlet.ZIP_PATH;
-import static com.brambolt.embedded.util.Streams.scan;
+import static com.brambolt.util.Streams.scan;
 import static java.nio.charset.StandardCharsets.UTF_8;
 import static javax.servlet.http.HttpServletResponse.SC_NOT_FOUND;
 import static javax.servlet.http.HttpServletResponse.SC_OK;
