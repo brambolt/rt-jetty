@@ -10,4 +10,4 @@ pluginManagement {
   }
 }
 
-rootProject.name = 'rt-jetty'
+rootProject.name = 'brambolt-rt-jetty'
