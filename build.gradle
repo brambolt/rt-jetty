@@ -14,6 +14,7 @@ ext {
     name: 'Stefán Sigurðsson'
   ]]
   inceptionYear = '2017'
+  isGitHosted = true
   isOpenSource = false // Disables publishing to plugins.gradle.org and Bintray
   licenses = [[]]
   release = bramboltRelease
